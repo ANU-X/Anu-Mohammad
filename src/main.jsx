@@ -2,14 +2,13 @@ import { createRoot } from 'react-dom/client'
 import App from './App'
 import { RouterProvider } from 'react-router'
 import router from './router/Router'
-import SkillProvider from './context/SkillProvider'
-
+import AssetsProvider from './context/AssetsProvider'
 
 
 createRoot(document.getElementById('root')).render(
-        <SkillProvider>        
+        <AssetsProvider>        
             <RouterProvider router={router}>
                 <App/>
             </RouterProvider>
-        </SkillProvider>
+        </AssetsProvider>
 )

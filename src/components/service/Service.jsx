@@ -10,7 +10,7 @@ import data_protection from "../../assets/data-protection.png";
 const Service = () => {
   return (
     <div className=" flex flex-col justify-center items-center list-inside space-y-16 py-5 bg-gray-50 border border-gray-100">
-      <div className=" font-montserrat font-semibold text-3xl text-gray-800 letter-speace">
+      <div className=" font-montserrat font-semibold text-2xl sm:text-3xl text-gray-800 letter-speace underline underline-offset-4">
         What i knows
       </div>
 
@@ -100,3 +100,4 @@ const Service = () => {
 };
 
 export default Service;
+
