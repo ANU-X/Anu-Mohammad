@@ -7,7 +7,7 @@ import Contact from "../page/Contact";
 import Web from "../page/Web";
 import Profile from "../components/Profile";
 import Aboutme from "../components/webaboutme/Aboutme";
-import Webresumelayout from "../components/webresumeLayout/WebresumeLayout";
+import Webresumelayout from "../components/webresumelayout/Webresumelayout"
 import Webresume from "../components/webresume/Webresume";
 import Webblog from "../components/webblog/Webblog";
 import Webcontacts from "../components/webcontact/Webcontact";
