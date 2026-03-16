@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=DM+Serif+Display:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MonteCarlo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://banglawebfonts.pages.dev/css/solaiman-lipi.css');
+@font-face {
+    font-family: 'Yummy';
+    font-family: 'ahsing';
+    src: url('./assets/fonts/Yummy-delivery-simple.otf') format('otf');
+    src: url('./assets/fonts/ahsing.woff2') format('woff2');
+    font-weight: normal;
+}
 
 @import "tailwindcss";
 
@@ -12,8 +19,10 @@
     --font-dmserif: "DM Serif Display", serif;
     --font-monteCarlo: "MonteCarlo", cursive;
     --font-solaiman: 'Solaiman Lipi', serif;
-    
+    --font-yummy: 'Yummy', serif;
+    --font-ahsing: 'ahsing'
 }
+
 
     body{
         font-family: var(--font-poppins);

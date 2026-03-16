@@ -10,7 +10,7 @@ import { RiBook3Line } from "react-icons/ri";
 
 
 
-const Webprofile = () => {
+const Webprofile = (props) => {
 
 
   return (    
@@ -30,7 +30,7 @@ const Webprofile = () => {
       <hr className='w-full h-2 text-gray-700'/>
 
       <Link to='webabout'>
-      <div className={`flex gap-2 font-light text-gray-400 ${isActive('/resume/webresumelayout/webabout') ? 'text-green-400': ''}`}>
+      <div className={`flex gap-2 font-light text-gray-400 ${props.isActive('/resume/webresumelayout/webabout') ? 'text-green-400': ''}`}>
         <IoPersonOutline className='text-lg '/>
         <h2 className=' '> ABOUT ME </h2>
       </div>
@@ -39,7 +39,7 @@ const Webprofile = () => {
       <hr className='w-full h-2 text-gray-700'/>
 
       <Link to='webresume'>
-      <div className={`flex gap-2 font-light text-gray-400 ${isActive('/resume/webresumelayout/webresume') ? 'text-green-400': ''}`}>
+      <div className={`flex gap-2 font-light text-gray-400 ${props.isActive('/resume/webresumelayout/webresume') ? 'text-green-400': ''}`}>
         <FaRegAddressCard className='text-lg'/>
         <h2 className=' '> RESUME </h2>
       </div>
@@ -48,7 +48,7 @@ const Webprofile = () => {
       <hr className='w-full h-2 text-gray-700'/>
 
       <Link to='webportfolio'>
-      <div className={`flex gap-2 font-light text-gray-400 ${isActive('/resume/webresumelayout/webportfolio') ? 'text-green-400': ''}`}>
+      <div className={`flex gap-2 font-light text-gray-400 ${props.isActive('/resume/webresumelayout/webportfolio') ? 'text-green-400': ''}`}>
         <SlBriefcase className='text-lg '/>
         <h2 className=' '> PORTFOLIO </h2>
       </div>
@@ -57,7 +57,7 @@ const Webprofile = () => {
       <hr className='w-full h-2 text-gray-700'/>
       
       <Link to='webblog'>
-      <div className={`flex gap-2 font-light text-gray-400 ${isActive('/resume/webresumelayout/webblog') ? 'text-green-400': ''}`}>
+      <div className={`flex gap-2 font-light text-gray-400 ${props.isActive('/resume/webresumelayout/webblog') ? 'text-green-400': ''}`}>
         <RiBook3Line className='text-lg '/>
         <h2 className=' '> BLOG </h2>
       </div>
@@ -66,7 +66,7 @@ const Webprofile = () => {
       <hr className='w-full h-2 text-gray-700'/>
 
       <Link to='webcontact'>
-      <div className={`flex gap-2 font-light text-gray-400 ${isActive('/resume/webresumelayout/webcontact') ? 'text-green-400': ''}`}>
+      <div className={`flex gap-2 font-light text-gray-400 ${props.isActive('/resume/webresumelayout/webcontact') ? 'text-green-400': ''}`}>
         <AiOutlineMail className='text-lg '/>
         <h2 className=' '> CONTACT </h2>
       </div>

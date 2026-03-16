@@ -4,6 +4,9 @@ import ring from "../../assets/ring.png";
 import Footer from "../footer/Footer";
 import Buttons from "../buttons/Buttons";
 
+
+
+
 const Hero = () => {
   return (
     <div className=" h-[92.3vh] flex flex-col md:flex-row justify-center md:justify-around items-center gap-10">

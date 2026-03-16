@@ -12,11 +12,11 @@ const Web = () => {
   return (
     <div className="space-y-50">
 
-      <div className="max-w-lg mx-auto px-4">
+      <div className="max-w-4xl mx-auto px-4">
         <Myskill/>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="">
         <Project/>
       </div>
 
@@ -32,7 +32,7 @@ const Web = () => {
         <Learning/>
       </div>
       
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <Education/>
       </div>
 

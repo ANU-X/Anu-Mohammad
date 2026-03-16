@@ -1,44 +1,32 @@
-import React from "react";
+import { useContext } from "react";
+import { AllassetContet } from "../../context/AssetsProvider";
 
 const Education = () => {
+  const { Contributor } = useContext(AllassetContet);
+
   return (
     <div className=" space-y-4">
       <h1 className="text-2xl sm:text-3xl underline underline-offset-4 text-gray-800 font-montserrat font-semibold">
-        Education
+        Mentor that shape me
       </h1>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {Contributor.map((contribut, index) => {
+        return (
+ 
+            <div key={index} className="flex justify-between items-center p-4 bg-gray-300 rounded-lg space-y-1">
+              <div className="">
+                <h2 className="font-dmserif text-lg sm:text-xl text-gray-800"> {contribut.name} </h2>
+                <p className="text-gray-700"> {contribut.profession} </p>
+              </div>
+              <img
+                src={contribut.image}
+                alt=""
+                className="rounded-full h-18 border-2 border-white"
+              />
+            </div>
 
-      <div className="flex justify-between space-y-2">
-        <div>
-          <h2 className="font-inter font-semibold">
-            Gaibandha Government College
-          </h2>
-          <p className="font-inter text-gray-500"> Bachelor of Arts </p>
-        </div>
-        <span className="font-inter text-gray-500"> 2017-2023 </span>
-      </div>
-
-      <div className="flex justify-between">
-        <div>
-          <h2 className="font-inter font-semibold"> Sumit Sha Dhaka </h2>
-          <p className="font-inter text-gray-500"> Web Development </p>
-        </div>
-        <span className="font-inter text-gray-500"> 2024-2026 </span>
-      </div>      
-
-      <div className="flex justify-between">
-        <div>
-          <h2 className="font-inter font-semibold"> Gaibandha Sahara Institute </h2>
-          <p className="font-inter text-gray-500"> Photo Editing </p>
-        </div>
-        <span className="font-inter text-gray-500"> 2022-2023 </span>
-      </div>
-
-      <div className="flex justify-between">
-        <div>
-          <h2 className="font-inter font-semibold"> Genuin Computer Trining Senter Gaibandha</h2>
-          <p className="font-inter text-gray-500"> Microsoft Office </p>
-        </div>
-        <span className="font-inter text-gray-500"> 2019-2020 </span>
+        );
+      })}
       </div>
     </div>
   );
