@@ -14,7 +14,7 @@ const Myskill = () => {
             <h1 className=" text-lg underline underline-offset-2 sm:text-3xl font-montserrat font-medium text-gray-800">
               MY SKILL
             </h1>
-            <p className="text-sm text-gray-700">
+            <p className="text-lg text-gray-700">
               Professional development expertise
             </p>
           </div>
