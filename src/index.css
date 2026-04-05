@@ -10,6 +10,7 @@
 
 @import "tailwindcss";
 
+
 @theme {
     --font-inter: 'Inter', sans-serif;
     --font-inter-itght: 'Inter Tight', sans-serif;
@@ -20,15 +21,11 @@
     --font-monteCarlo: "MonteCarlo", cursive;
     --font-solaiman: 'Solaiman Lipi', serif;
     --font-yummy: 'Yummy', serif;
-    --font-ahsing: 'ahsing'
+    --font-ahsing: 'ahsing';
+    --color-background: white;
+    --color-foreground: #121213;
+    --color-app-border: #d1d5db;
 }
-
-
-    body{
-        font-family: var(--font-poppins);
-        font-weight: 400;
-        font-style: normal;
-    }
 
     .word-speace{
         word-spacing: 0.2rem;
@@ -42,6 +39,21 @@
 
     .bg-gradient{
         background: linear-gradient(180deg, #537EBF 0%, #A384BC 100%);
+    }
+    .dark {
+        --color-background:#030b1a;
+        --color-foreground: #e0e0e0;
+        --color-app-border: #1f2937;
+}
+
+    body{
+        font-family: var(--font-poppins);
+        font-weight: 400;
+        font-style: normal;
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        min-height: 100vh;
+        background-attachment: fixed;
     }
 
     /*text gradient use: bg-gradient-to-b from-[#537EBF] to-[#A384BC] bg-clip-text text-transparent */

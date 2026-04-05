@@ -1,17 +1,11 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "../layout/Layout";
-import Hero from "../components/hero/Hero";
-import About from "../page/About";
-import Resume from "../page/Resume";
-import Contact from "../page/Contact";
-import Web from "../page/Web";
 import Profile from "../components/Profile";
 import Aboutme from "../components/webaboutme/Aboutme";
 import Webresumelayout from "../components/webresumelayout/Webresumelayout"
-import Webresume from "../components/webresume/Webresume";
 import Webblog from "../components/webblog/Webblog";
-import Webcontacts from "../components/webcontact/Webcontact";
-import Webportfolio from "../components/webportfolio/Webportfolio";
+import Landingpage from "../components/landing/Landingpage";
+import Weblanding from "../components/weblandingpage/Weblanding";
 
 
 const router = createBrowserRouter([
@@ -21,26 +15,10 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component: Hero
+                Component: Landingpage,
             },
             {
-                path: 'about',
-                Component: About
-            },
-            {
-                path: 'resume',
-                Component: Resume,
-            },
-            {
-                path: 'contact',
-                Component: Contact
-            },
-            {
-                path: 'web',
-                Component: Web
-            },
-            {
-                path: 'resume/webresumelayout',
+                path: 'webresumelayout',
                 Component: Webresumelayout,
                 children: [                  
                     {
@@ -52,22 +30,13 @@ const router = createBrowserRouter([
                         Component: Aboutme
                     },
                     {
-                        path: 'webresume',
-                        Component: Webresume
-                    },
-                    {
-                        path: 'webportfolio',
-                        Component: Webportfolio
+                        path: 'resume',
+                        Component: Weblanding
                     },
                     {
                         path: 'webblog',
                         Component: Webblog
                     },
-                    {
-                        path: 'webcontact',
-                        Component: Webcontacts
-                    }
-
                 ]                
             }
 

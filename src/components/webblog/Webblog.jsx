@@ -13,7 +13,7 @@ const Webblog = () => {
       </div>
       <hr className='w-full h-2 border-dotted border-t-2 text-gray-700'/>
 
-      <div className=" sm:columns-2 md:columns-3">
+      <div className="sm:columns-2 md:columns-3 space-y-8 gap-5">
         {
           Blog.map( (items, index)=> {
             return(

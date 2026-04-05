@@ -1,48 +1,40 @@
-import React from "react";
-import { FaRegAddressCard } from "react-icons/fa";
 
 const Webresume = () => {
   return (
-    <div className="max-w-5xl mx-auto p-5">
-      <div className="flex justify-between p-5 text-2xl sm:text-3xl md:text-4xl text-[#3bd595]">
-        <h2 className=" font-dmserif " > My Resume. </h2>
-        <FaRegAddressCard />
-      </div>
-      <hr className="w-full h-2 border-dotted border-t-2 text-gray-700" />
-
-      <h1 className="font-dmserif text-lg sm:text-2xl text-gray-100 my-5 underline underline-offset-6"> Education Qualification : </h1>
-      <div className="max-w-3xl mx-auto grid grid-cols-2 text-gray-200 gap-4">
+    <div className="max-w-4xl mx-auto">
+      <h1 className="font-dmserif text-lg sm:text-2xl my-5 underline underline-offset-6"> Education Qualification : </h1>
+      <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4">
         <div className=" sm:font-semibold">2017-2022</div>
         <div className=" space-y-1">
           <h3 className="sm:text-lg font-bold"> Bachelor of Arts (BA) </h3>
-          <p className="text-gray-300 text-sm">| Gaibandha Govt College </p>
-          <p className="text-gray-300">| Board: National University </p>
-          <p className="text-gray-300">| Subject: Philosophy </p>
-          <p className="text-gray-300">| CGPA: 2.75 (out of 4.00)</p>
+          <p className="text-sm">| Gaibandha Govt College </p>
+          <p>| Board: National University </p>
+          <p>| Subject: Philosophy </p>
+          <p>| CGPA: 2.75 (out of 4.00)</p>
         </div>
 
         <div className="sm:font-semibold">2016-2017</div>
         <div className="space-y-1">
           <h3 className="sm:text-lg font-bold">Higher Secondary Certificate (HSC)</h3>
-          <p className="text-gray-300">| Haji Osman Goni Dgree College</p>
-          <p className="text-gray-300">| Board: Dinajpur</p>
-          <p className="text-gray-300">| Subject: Humanities</p>
-          <p className="text-gray-300">| CGPA: 3.33 (out of 5.00)</p>
+          <p>| Haji Osman Goni Dgree College</p>
+          <p>| Board: Dinajpur</p>
+          <p>| Subject: Humanities</p>
+          <p>| CGPA: 3.33 (out of 5.00)</p>
         </div>
 
         <div className="sm:font-semibold">2010-2015</div>
         <div className="space-y-1">
           <h3 className="sm:text-lg font-bold">Secondary School Certificate (SSC)</h3>
-          <p className="text-gray-300">| Ghagoa M.B. High School</p>
-          <p className="text-gray-300">| Board: Dinajpur</p>
-          <p className="text-gray-300">| Subject: Humanities</p>
-          <p className="text-gray-300">| CGPA: 4.11 (out of 5.00) </p>
+          <p>| Ghagoa M.B. High School</p>
+          <p>| Board: Dinajpur</p>
+          <p>| Subject: Humanities</p>
+          <p>| CGPA: 4.11 (out of 5.00) </p>
         </div>        
       </div>
 
       <div className="border border-gray-600 p-2 my-10 space-y-10">
-      <h1 className="font-dmserif text-lg sm:text-2xl text-gray-200 underline underline-offset-6"> Personal Information : </h1>
-      <div className="max-w-3xl mx-auto grid grid-cols-2 text-white space-y-3">
+      <h1 className="font-dmserif text-lg sm:text-2xl underline underline-offset-6"> Personal Information : </h1>
+      <div className="max-w-3xl mx-auto grid grid-cols-2 space-y-3">
         <div>Name</div>
         <div> : Md. Anu Miah </div>
         <div> Father's Name </div>
@@ -67,8 +59,8 @@ const Webresume = () => {
       </div>
 
       <div className="space-y-5">
-      <h1 className="font-dmserif text-lg sm:text-2xl text-gray-200 underline underline-offset-6"> Address  / Location : </h1>
-      <div className="max-w-3xl mx-auto grid grid-cols-2 text-white gap-4">
+      <h1 className="font-dmserif text-lg sm:text-2xl underline underline-offset-6"> Address  / Location : </h1>
+      <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4">
         <div className=" sm:font-semibold"> PERMANENT </div>
         <div className="space-y-1">
           <h3 className="sm:text-lg font-bold"> Village : Uttar Ghagoa Gonglar Doba </h3>
@@ -78,7 +70,7 @@ const Webresume = () => {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto grid grid-cols-2 text-white gap-4">
+      <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4">
         <div className="sm:font-semibold"> PRESENT </div>
         <div className="space-y-2">
           <h3 className="sm:text-lg font-bold"> Village : Nurer Chala Bazar </h3>

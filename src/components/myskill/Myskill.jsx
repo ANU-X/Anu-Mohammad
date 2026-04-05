@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Skill from "../skill/Skill";
 import { AllassetContet } from "../../context/AssetsProvider";
 
@@ -9,16 +9,16 @@ const Myskill = () => {
   const {skill_Progress} = useContext(AllassetContet)
 
   return (
-         <div className="max-w-4xl mx-auto mt-8 space-y-10 ">
-          <div className="flex flex-col items-center">
-            <h1 className=" text-lg underline underline-offset-2 sm:text-3xl font-montserrat font-medium text-gray-800">
-              MY SKILL
+         <div className="mx-auto max-w-7xl gap-8 h-screen flex flex-col justify-center px-5">
+          <div className="flex flex-col">
+            <h1 className=" text-lg sm:text-2xl font-montserrat font-medium">
+              My Skills
             </h1>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg">
               Professional development expertise
             </p>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-5">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5">
             {skill_Progress.map((skill, index) => {
               if (skill.catagory === "Language")
                 return (
@@ -28,7 +28,6 @@ const Myskill = () => {
                     image={skill.image}
                     name={skill.name}
                     catagory={skill.catagory}
-                    percentage={skill.percentage}
                     color={skill.backgroundColor}
                   />
                 );

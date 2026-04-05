@@ -7,18 +7,17 @@ const Buttons = ({
     web: {
       id: 1,
       texts: "Web Developer",
-      style: "text-gray-800 border border-gray-400 hover:bg-gray-400 hover:text-white",
-      path: "web",
+      style: "text-gray-800 border border-gray-400",
     },
     graphic: {
       id: 2,
       texts: "Graphic Designer",
-      style: "text-gray-800 border border-gray-400 hover:bg-gray-400 hover:text-white",
+      style: "text-gray-800 border border-gray-400",
     },
     operatore: {
       id: 3,
       texts: "Data Analist",
-      style: "text-gray-800 border border-gray-400 hover:bg-gray-400 hover:text-white",
+      style: "text-gray-800 border border-gray-400",
     },
   };
 

@@ -5,8 +5,8 @@ const Education = () => {
   const { Contributor } = useContext(AllassetContet);
 
   return (
-    <div className=" space-y-4">
-      <h1 className="text-2xl sm:text-3xl underline underline-offset-4 text-gray-800 font-montserrat font-semibold">
+    <div className="mx-auto max-w-7xl px-5 space-y-6 flex flex-col justify-center h-screen">
+      <h1 className="text-2xl sm:text-3xl font-montserrat font-semibold">
         Mentor that shape me
       </h1>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">

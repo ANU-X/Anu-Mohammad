@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Webprofile from '../webprofile/Webprofile'
 import { Outlet, useLocation } from 'react-router'
 import { FaBars } from "react-icons/fa6";
@@ -24,14 +24,14 @@ const Webresumelayout = () => {
     }
 
   return (
-    <div className=' relative w-full h-[92.3vh] grid grid-cols-6'>
+    <div className=' relative w-full h-[90vh] grid grid-cols-6'>
       <div className=''>
       <div onClick={manuHandler} className='block sm:hidden absolute top-0 z-10 p-2 text-2xl text-white'>
       {
         manubar ? <IoClose/> :  <FaBars/>
       }
       </div>
-      <div className='hidden sm:block h-[92.3vh]'>
+      <div className='hidden sm:block h-[90vh]'>
         <Webprofile isActive = {isActive}/>
       </div>
 
@@ -45,11 +45,12 @@ const Webresumelayout = () => {
           <Link to='webcontact' className={`flex gap-2 font-light ${isActive('/resume/webresumelayout/webcontact') ? 'text-green-400': ''}`}>Contact</Link>
         </div>
       </div>
-      <div className=' bg-[#2c2d2f] col-span-6 sm:col-span-5 overflow-y-auto'> 
+      <div className='col-span-6 sm:col-span-5 overflow-y-auto'> 
       <Outlet/>
       </div>
     </div>
   )
 }
+
 
 export default Webresumelayout
