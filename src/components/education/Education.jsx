@@ -5,7 +5,7 @@ const Education = () => {
   const { Contributor } = useContext(AllassetContet);
 
   return (
-    <div className="mx-auto max-w-7xl px-5 space-y-6 flex flex-col justify-center h-screen">
+    <div className="mx-auto max-w-7xl px-5 space-y-6 flex flex-col justify-center sm:h-screen">
       <h1 className="text-2xl sm:text-3xl font-montserrat font-semibold">
         Mentor that shape me
       </h1>

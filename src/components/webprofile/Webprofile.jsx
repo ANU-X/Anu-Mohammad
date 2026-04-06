@@ -1,7 +1,6 @@
 import { Link } from 'react-router';
 import web_pic from '../../assets/web-profile.jpg'
 import { AiOutlineHome } from "react-icons/ai";
-import { IoPersonOutline } from "react-icons/io5";
 import { FaRegAddressCard } from "react-icons/fa";
 import { RiBook3Line } from "react-icons/ri";
 import { FaLinkedin, FaSquareFacebook, FaSquareGithub} from "react-icons/fa6";
@@ -42,15 +41,9 @@ const Webprofile = (props) => {
       </div>
       </Link>
 
-      <Link to='webabout'>
-      <div className={`flex gap-10 font-light ${props.isActive('/resume/webresumelayout/webabout') ? 'text-green-400': ''}`}>
-        <IoPersonOutline className='text-lg '/>
-        <h2 className=' '> ABOUT ME </h2>
-      </div>
-      </Link>
       </div>
       </div>
-      <div className='space-y-8 mb-4 text-center'>
+      <div className='space-y-8 text-center'>
         <ul className='flex gap-10 justify-center text-2xl'>
           <li><a target='blank' href="https://github.com/ANU-X"><FaSquareGithub/></a></li>
           <li><a target='blank' href="https://www.linkedin.com/in/muhammad-anu-9a49102b9/"> <FaLinkedin/> </a></li>
@@ -63,3 +56,4 @@ const Webprofile = (props) => {
 }
 
 export default Webprofile
+

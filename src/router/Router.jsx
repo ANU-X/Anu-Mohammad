@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "../layout/Layout";
 import Profile from "../components/Profile";
-import Aboutme from "../components/webaboutme/Aboutme";
 import Webresumelayout from "../components/webresumelayout/Webresumelayout"
 import Webblog from "../components/webblog/Webblog";
 import Landingpage from "../components/landing/Landingpage";
@@ -24,10 +23,6 @@ const router = createBrowserRouter([
                     {
                         index: true,
                         Component: Profile
-                    },
-                    {
-                        path: 'webabout',
-                        Component: Aboutme
                     },
                     {
                         path: 'resume',

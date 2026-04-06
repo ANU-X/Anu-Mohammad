@@ -13,7 +13,7 @@ const Navbar = () => {
   const {aboutRef, skillRef, projectsRef, exprenceRef, serviceRef, learningRef, educationRef, contactRef, scrollToSection, activeSection} = useContext(AllassetContet)
 
   const [activeLink, setActiveLink] = useState('')
-  const [manubar, setManubar] = useState(true)
+  const [manubar, setManubar] = useState(false)
   const {theme, setTheme} = useTheme()
 
   const PathLocatio = useLocation()
@@ -77,16 +77,25 @@ const Navbar = () => {
     </div>
 
       {/* -----------------phone manu bar design-----------------*/}
-    <button onClick={ManubarHander} className=" block sm:hidden">
+    <button onClick={ManubarHander} className="sm:hidden text-2xl text-black">
             {
         manubar ? <IoClose/> :  <FaBars/>
       }
     </button>
-    <div onClick={ManubarHander} className={`sm:hidden flex flex-col bg-blue-400 absolute top-full w-full h-[92.3vh] justify-center items-center space-y-10 rounded-br-full ${manubar ? 'block' : 'hidden'}`}>
-      <Link to='/' className={`text-lg hover:text-green-700 active:text-amber-200  ${isActive('/') ? 'text-green-600': ''}`}> Home </Link>
-      <Link to='/about' className={`text-lg active:text-amber-200 hover:text-green-700 ${isActive('/about') ? 'text-green-600' : ''}`}> About </Link>
-      <Link to='/resume' className={`text-lg active:text-amber-200 hover:text-green-700 ${isActive('/resume/webresumelayout') ? 'text-green-600' : ''}`}> Resume </Link>
-      <Link to='contact' className={`text-lg active:text-amber-200 hover:text-green-700 ${isActive('/contact') ? 'text-green-600' : ''}`}> Contact </Link>
+    <div onClick={ManubarHander} className={`sm:hidden flex flex-col bg-blue-400/95 absolute top-full w-full h-[92.3vh] justify-center items-center space-y-10 ${manubar ? 'block' : 'hidden'}`}>
+      <button onClick={()=>scrollToSection(aboutRef, 'about')} className={`text-lg text-black hover:text-green-700 active:text-amber-200 cursor-pointer  ${activeSection === 'about' ? 'text-green-600': ''}`}> About </button>
+
+      <button onClick={()=>scrollToSection(skillRef, 'skill')} className={`text-lg text-black active:text-amber-200 hover:text-green-700 cursor-pointer ${activeSection === 'skill' ? 'text-green-600' : ''}`}> Skill </button>
+
+      <button onClick={()=>scrollToSection(projectsRef, 'project')} className={`text-lg text-black active:text-amber-200 hover:text-green-700 cursor-pointer ${activeSection === 'project' ? 'text-green-600' : ''}`}> Project </button>
+
+      <button onClick={()=>scrollToSection(exprenceRef, 'experince')} className={`text-lg text-black active:text-amber-200 hover:text-green-700 cursor-pointer ${activeSection === 'experince' ? 'text-green-600' : ''}`}> Experince </button>
+
+      <button onClick={()=>scrollToSection(learningRef, 'learning')} className={`text-lg text-black active:text-amber-200 hover:text-green-700 cursor-pointer ${activeSection === 'learning' ? 'text-green-600' : ''}`}> Learing </button>
+
+      <button onClick={()=>scrollToSection(contactRef, 'contact')} className={`text-lg text-black  active:text-amber-200 hover:text-green-700 cursor-pointer ${activeSection === 'contact' ? 'text-green-600' : ''}`}> Contact </button>
+
+      <Link to='/webresumelayout' className={`text-lg text-black active:text-amber-200 hover:text-green-700 ${isActive('/webresumelayout') ? 'text-green-600' : ''}`}> Resume </Link>       
     </div>
     </div>
     </nav>

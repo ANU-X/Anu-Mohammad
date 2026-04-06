@@ -7,11 +7,9 @@ import { LuMessageSquareShare } from "react-icons/lu";
 import { BsSend } from "react-icons/bs";
 
 
-
-
 const Contact = () => {
   return (
-    <div id="contact" className=" flex flex-col gap-20 justify-center items-center text-center my-10">
+    <div id="contact" className="px-5 flex flex-col gap-20 justify-center items-center text-center my-10">
 
       <div className="space-y-2">
         <h1 className=" text-3xl font-extrabold">Let's Connect</h1>
@@ -51,24 +49,24 @@ const Contact = () => {
       <div className="py-5 flex flex-col justify-center gap-8 rounded">
         <div className="space-y-5 xl:w-md 2xl:w-xl" >
           <h1 className="flex items-center gap-4 text-2xl text-left"><BsSend/> Direct Contact</h1>
-        <div className=" flex gap-6 items-center border rounded-2xl px-6 py-5 ">
-          <span className="border p-3 rounded-xl text-lg"><MdCall/></span>
+        <div className=" flex gap-6 items-center border rounded-2xl px-4 sm:px-6 py-3 sm:py-5 ">
+          <span className="border p-3 rounded-xl text-md sm:text-lg"><MdCall/></span>
         <div className="text-left">
           <p>phone</p>
           <h1>++880 170060-6955</h1>
         </div>
         </div>
 
-        <div className="flex gap-6 items-center border rounded-2xl px-6 py-5">
-          <span className="border p-3 rounded-xl text-lg"><MdOutlineAlternateEmail/></span>
+        <div className="flex gap-6 items-center border rounded-2xl px-4 sm:px-6 py-3 sm:py-5">
+          <span className="border p-3 rounded-xl text-md sm:text-lg"><MdOutlineAlternateEmail/></span>
           <div className="text-left">
             <p>gmail</p>
           <h1> mdanumia1999@gmail.com </h1>
           </div>
         </div>
 
-        <div className="flex gap-6 items-center border rounded-2xl px-6 py-5">
-          <span className="border p-3 rounded-xl text-lg"><TfiLocationPin/></span>
+        <div className="flex gap-6 items-center border rounded-2xl px-4 sm:px-6 py-3 sm:py-5">
+          <span className="border p-3 rounded-xl text-md sm:text-lg"><TfiLocationPin/></span>
           <div className="text-left">
             <p>adress</p>
           <h1> Vatara Thana, Nutun Bazar, Dhaka </h1>

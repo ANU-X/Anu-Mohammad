@@ -1,4 +1,4 @@
-import Profile_photo from "../../assets/robot.webp";
+import FSR03764 from '../../assets/FSR03764.jpg'
 
 
 const About = () => {
@@ -16,8 +16,10 @@ const About = () => {
         <span className="border border-gray-400 text-lg px-4 py-2">Data Analist</span>
         </div>
       </div>
-      <div className=" relative w-40 sm:w-60 h-40 sm:h-60 flex justify-center items-center">
-        <img src={Profile_photo} alt="" className=" rounded-2xl" />
+      <div className="w-40 sm:w-80">
+        <div className='border p-2 rounded-2xl border-app-border'>
+          <img src={FSR03764} alt="" className=" rounded-2xl" />
+        </div>
       </div>
     </div>
   );
