@@ -11,9 +11,9 @@ const CartProject = () => {
   return (
     <div className="md:columns-2 xl:columns-3 md:gap-10 xl:gap-10 space-y-12">
       {ProjectCart.map((item) => (
-        <div key={item.id} className="flex flex-col border rounded-4xl break-inside-avoid">
+        <div key={item.id} className="flex flex-col border border-app-border hover:border-gray-600 rounded-4xl break-inside-avoid">
           <div>
-          <video autoPlay loop playsinline loading='lazy' className="rounded-t-4xl">
+          <video autoPlay loop playsinline className=" aspect-video rounded-t-4xl">
             <source src={item.video} type="video/mp4"/>
           </video>            
           </div>
@@ -26,14 +26,14 @@ const CartProject = () => {
             <div className=" space-x-2 space-y-2">
                 {
                 item.lavel.map((teach, index)=>(
-                  <button key={index} className=" outline px-2 rounded">
+                  <button key={index} className=" outline outline-app-border px-2 rounded">
                     {teach}
                     </button>
                 ))
               }
             </div>
             <div className="flex gap-8 items-center justify-center">
-              <button className="border rounded-sm px-4 py-2 hover:text-white transition-all duration-300 hover:shadow-[0_0_20px_2px_rgba(224,45,45,0.6)]  hover:bg-red-500">
+              <button className="border border-app-border rounded-sm px-4 py-2 hover:text-white transition-all duration-300 hover:shadow-[0_0_20px_2px_rgba(224,45,45,0.6)]  hover:bg-red-500">
                 <a
                   target="blank"
                   href={item.liveLink}
@@ -43,7 +43,7 @@ const CartProject = () => {
                   Live Demo
                 </a>
               </button>
-              <button className="border rounded-sm px-4 py-2 transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_2px_rgba(224,45,45,0.6)] hover:bg-red-500">
+              <button className="border border-app-border rounded-sm px-4 py-2 transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_2px_rgba(224,45,45,0.6)] hover:bg-red-500">
                 <a
                   target="blank"
                   href={item.codeLink}
@@ -60,5 +60,6 @@ const CartProject = () => {
     </div>
   );
 };
+
 
 export default CartProject;

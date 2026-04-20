@@ -4,9 +4,10 @@ const Learning = () => {
   return (
     <div className='mx-auto max-w-7xl px-5 space-y-5 list-inside h-screen flex flex-col justify-center '>
         <h1 className='font-montserrat font-semibold text-lg sm:text-3xl' > Keep Learing and growing </h1>
-            <li> Future Technological Developments </li>
-            <li> Improving the Quality of skill </li>
-            <li> Expanding Project opporturites </li>
+            <li> Express, MongoDB study running. . . </li>
+            <li> Next Learning Next.js </li>
+            <li> Then Next Study Data Structures & Algorithms (Basic) </li>
+            <li> Then Next Study Backend Architecture (MVC) </li>
     </div>
   )
 }

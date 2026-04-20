@@ -17,7 +17,7 @@ const Webblog = () => {
         {
           Blog.map( (items, index)=> {
             return(
-              <Cart key={index} image = {items.image} />
+              <Cart key={index} image = {items.image} name = {items.name} about = {items.about} date = {items.date} />
             )
           } )
         }

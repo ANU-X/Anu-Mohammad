@@ -9,8 +9,8 @@ const Myskill = () => {
   const {skill_Progress} = useContext(AllassetContet)
 
   return (
-         <div className="mx-auto max-w-7xl gap-8 sm:h-screen flex flex-col justify-center px-5 my-20 sm:my-0">
-          <div className="flex flex-col">
+         <div className="mx-auto max-w-7xl gap-12 sm:h-screen flex flex-col justify-center px-5 my-20 sm:my-0">
+          <div className=" space-y-2 ">
             <h1 className=" text-lg sm:text-2xl font-montserrat font-medium">
               My Skills
             </h1>

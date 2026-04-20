@@ -13,7 +13,7 @@ const Webprofile = (props) => {
 
 
   return (    
-    <div className='h-full flex flex-col justify-between items-center gap-5 border-r border-amber-300'>  
+    <div className='h-full flex flex-col justify-between items-center gap-5 border-r border-gray-500'>  
 
       <div className='flex flex-col items-center gap-5'>
       <div>

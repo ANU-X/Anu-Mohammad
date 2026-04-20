@@ -41,11 +41,12 @@ const Landingpage = () => {
         <div ref={contactRef}>
         <Contact />
       </div>
-      <div className="text-center my-4">
+      <div>
         <Footer/>
       </div>
     </div>
   );
 };
+
 
 export default Landingpage;
