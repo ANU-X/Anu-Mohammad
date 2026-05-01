@@ -8,10 +8,11 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const CartProject = () => {
   const { ProjectCart } = useContext(AllassetContet);
 
+  // {/* 5c87f8-bc94f5-3bd595 */}
   return (
     <div className="md:columns-2 xl:columns-3 md:gap-10 xl:gap-10 space-y-12">
       {ProjectCart.map((item) => (
-        <div key={item.id} className="flex flex-col border border-app-border hover:border-gray-600 rounded-4xl break-inside-avoid">
+        <div key={item.id} className="flex flex-col border border-app-border hover:border-[#5c87f8] hover:shadow-[0_0_10px_0.5px_rgba(188,148,245)] rounded-4xl break-inside-avoid">
           <div>
           <video autoPlay loop playsinline className=" aspect-video rounded-t-4xl">
             <source src={item.video} type="video/mp4"/>
@@ -19,14 +20,14 @@ const CartProject = () => {
           </div>
           <div className="flex flex-col gap-5 px-8 py-5">
             <div>
-              <a href={item.liveLink} target="blank" className="flex items-center gap-3 text-2xl transition-all duration-300 hover:drop-shadow-[0_0_5px_rgba(212,4,91,1)] hover:text-red-500">{item.name} <FaExternalLinkAlt className="text-sm"/> </a>
+              <a href={item.liveLink} target="blank" className="flex items-center gap-3 text-2xl transition-all duration-300 hover:text-[#7bffc8] text-[#3bd595]">{item.name} <FaExternalLinkAlt className="text-sm"/> </a>
               <p>{item.about}</p>
             </div>
 
             <div className=" space-x-2 space-y-2">
                 {
                 item.lavel.map((teach, index)=>(
-                  <button key={index} className=" outline outline-app-border px-2 rounded">
+                  <button key={index} className=" outline outline-app-border hover:text-[#3bd595] px-2 rounded">
                     {teach}
                     </button>
                 ))
@@ -37,7 +38,7 @@ const CartProject = () => {
                 <a
                   target="blank"
                   href={item.liveLink}
-                  className="flex justify-center items-center gap-4"
+                  className="flex justify-center text-nowrap items-center gap-4"
                 >
                   <VscGlobe />
                   Live Demo

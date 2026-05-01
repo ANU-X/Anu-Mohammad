@@ -5,7 +5,7 @@ import { FaRegAddressCard } from "react-icons/fa";
 
 const Weblanding = () => {
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto py-20">
       <div className="flex justify-between p-5 text-2xl sm:text-3xl md:text-4xl text-[#3bd595]">
         <h2 className=" font-dmserif " > My Resume. </h2>
         <FaRegAddressCard />

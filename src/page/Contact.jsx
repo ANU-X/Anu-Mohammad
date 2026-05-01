@@ -18,7 +18,7 @@ const Contact = () => {
 
       <div className="flex flex-col lg:flex-row gap-20">
 
-        <div className="text-left space-y-10 border rounded-4xl lg:w-lg xl:w-xl 2xl:w-3xl p-10 2xl:p-20">
+        <div className="text-left space-y-10 border border-[#5c87f8] rounded-4xl lg:w-lg xl:w-xl 2xl:w-3xl p-10 2xl:p-20">
           <div className="space-y-2">
           <h1 className="text-2xl">Send a Message</h1>
           <p>I'll get back to you within 24 hours.</p>

@@ -1,7 +1,7 @@
 
 const Webresume = () => {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto p-5">
       <h1 className="font-dmserif text-lg sm:text-2xl my-5 underline underline-offset-6"> Education Qualification : </h1>
       <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4">
         <div className=" sm:font-semibold">2017-2022</div>
