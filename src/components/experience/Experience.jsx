@@ -1,7 +1,6 @@
-
-import React from 'react';
-
 const Experience = () => {
+
+
   const experiences = [
     {
       date: "august 2023 - Present",
@@ -27,7 +26,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="py-40 px-4 space-y-12 mx-auto max-w-7xl">
+    <div className=" relative py-40 px-4 space-y-12 mx-auto max-w-7xl">
       <div>
         <h1 className='text-lg sm:text-2xl font-montserrat font-medium'>Experience</h1>
         <p className='text-lg'>profesonal experience</p>
@@ -39,7 +38,7 @@ const Experience = () => {
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div key={index} className={`relative flex items-center justify-between w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+            <div id='exprence_cart' key={index} className={`relative flex items-center justify-between w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
               
               <div className="hidden md:block w-5/12"></div>
               
@@ -47,7 +46,7 @@ const Experience = () => {
               <div className=" absolute md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#bc94f5] rounded-full border-4 border-[#5c87f8] z-10 shadow-[0_0_10px_rgba(220,38,38,1)] "></div>
 
               {/* main cart */}
-              <div className="w-full md:w-5/12 p-6 rounded-xl border border-gray-600 hover:border-[#5c87f8] transition-all duration-300">
+              <div id='exprss-gsp' className=" w-full md:w-5/12 p-6 rounded-xl border border-gray-600 hover:border-[#5c87f8] transition-all duration-300 hover:bg-[#5c88f808] hover:scale-105">
                 <span className="text-sm font-medium text-[#3bd595] ">{exp.date}</span>
                 <h3 className="text-2xl font-bold mt-1">{exp.role}</h3>
                   <span>{exp.company}</span>
@@ -66,6 +65,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
+            <div className=" absolute top-1/3 right-0 h-100 w-50 md:w-100 bg-[#bc94f5] pointer-events-none rounded-full opacity-30 blur-3xl "></div>
     </div>
   );
 };

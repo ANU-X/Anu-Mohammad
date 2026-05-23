@@ -3,6 +3,8 @@ import { GoDotFill } from "react-icons/go";
 
 
 const About = () => {
+
+
   return (
     <div id="about" className="flex flex-col md:flex-row justify-center items-center gap-20 py-40 px-5">
       <div className="w-60 sm:w-70
@@ -28,10 +30,10 @@ const About = () => {
         <div className='flex justify-between gap-10'>
         <div>
           <p>Status</p>
-          <span className='flex items-center gap-2'><GoDotFill className='text-green-600 text-xl'/> active</span>
+          <span className='flex items-center gap-2'><GoDotFill className='text-green-600 text-xl animate-pulse'/> Active</span>
         </div>
           <div>
-            <p>location</p>
+            <p>Location</p>
             <p>Dhaka, Bangladesh.</p>
           </div>
         </div>

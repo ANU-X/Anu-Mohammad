@@ -17,7 +17,7 @@ const AssetsProvider = ({ children }) => {
     Contributor,
     ProjectCart
 };
-
+  const homeRef = useRef(null)
   const aboutRef = useRef(null);
   const skillRef = useRef(null);
   const projectsRef = useRef(null);
@@ -26,6 +26,7 @@ const AssetsProvider = ({ children }) => {
   const learningRef = useRef(null);
   const educationRef = useRef(null);
   const contactRef = useRef(null);
+  
 
   const scrollToSection = (elementRef, sectoname) => {
     setActiveSection(sectoname)
@@ -37,7 +38,7 @@ const AssetsProvider = ({ children }) => {
     }
   };
   return (
-    <AllassetContet.Provider value={{...contextValu, aboutRef, skillRef, projectsRef, exprenceRef, serviceRef, learningRef, educationRef, contactRef, activeSection, setActiveSection, scrollToSection}}>
+    <AllassetContet.Provider value={{...contextValu,homeRef, aboutRef, skillRef, projectsRef, exprenceRef, serviceRef, learningRef, educationRef, contactRef, activeSection, setActiveSection, scrollToSection}}>
       {children}
     </AllassetContet.Provider>
   );

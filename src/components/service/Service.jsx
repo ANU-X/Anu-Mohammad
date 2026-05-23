@@ -9,8 +9,8 @@ import data_protection from "../../assets/data-protection.png";
 
 const Service = () => {
   return (
-    <div className=" flex flex-col justify-center items-center list-inside space-y-16 py-5 bg-gray-50 border border-gray-100">
-      <div className=" font-montserrat font-semibold text-2xl sm:text-3xl text-gray-800 letter-speace underline underline-offset-4">
+    <div className="relative flex flex-col justify-center items-center list-inside space-y-16 py-5">
+      <div className=" font-montserrat font-semibold text-[#3bd595] text-2xl sm:text-3xl letter-speace underline underline-offset-4">
         What i knows
       </div>
 
@@ -18,7 +18,7 @@ const Service = () => {
         <div className=" flex space-x-5 ">
           <img src={commerce_soluition} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700">E-Commerce Soluition</h2>
+            <h2 className="md:text-lg font-montserrat font-semibold">E-Commerce Soluition</h2>
             <p className="font-inter text-gray-500"> it is a ecmmerce site </p>
           </div>
         </div>
@@ -26,7 +26,7 @@ const Service = () => {
         <div className=" flex space-x-5">
           <img src={web_application} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700"> Custom web aplicication </h2>
+            <h2 className="md:text-lg font-montserrat font-semibold"> Custom web aplicication </h2>
             <p className="font-inter text-gray-500">this is ak file</p>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Service = () => {
         <div className=" flex space-x-5">
           <img src={web_support} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700"> Web maintencee and sapport </h2>
+            <h2 className="md:text-lg font-montserrat font-semibold"> Web maintencee and sapport </h2>
             <p className="font-inter text-gray-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Similique, exercitationem.
@@ -45,7 +45,7 @@ const Service = () => {
         <div className=" flex space-x-5">
           <img src={landing_page} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700"> Landing page site </h2>
+            <h2 className="md:text-lg font-montserrat font-semibold"> Landing page site </h2>
             <p className="font-inter text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
               accusamus?
@@ -56,7 +56,7 @@ const Service = () => {
         <div className=" flex space-x-5">
           <img src={seo_optimization} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700"> Seo optimization </h2>
+            <h2 className="md:text-lg font-montserrat font-semibold"> Seo optimization </h2>
             <p className="font-inter text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               possimus?
@@ -67,7 +67,7 @@ const Service = () => {
         <div className=" flex space-x-5">
           <img src={seo_frendly} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700"> Site seo friendly </h2>
+            <h2 className="md:text-lg font-montserrat font-semibold"> Site seo friendly </h2>
             <p className="font-inter text-gray-500">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Adipisci, illum?
@@ -78,7 +78,7 @@ const Service = () => {
         <div className=" flex space-x-5">
           <img src={performance} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700"> Site performance </h2>
+            <h2 className="md:text-lg font-montserrat font-semibold"> Site performance </h2>
             <p className="font-inter text-gray-500">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
@@ -86,7 +86,7 @@ const Service = () => {
         <div className=" flex space-x-5">
           <img src={data_protection} alt="" className="h-10 md:h-12" />
           <div>
-            <h2 className="md:text-lg font-montserrat font-semibold text-gray-700"> Data security </h2>
+            <h2 className="md:text-lg font-montserrat font-semibold"> Data security </h2>
             <p className="font-inter text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Incidunt, rerum?
@@ -95,6 +95,7 @@ const Service = () => {
         </div>
         
       </div>
+            <div className=" absolute h-100 w-50 md:w-100 bg-[#5c87f8] opacity-5 blur-3xl pointer-events-none "></div>
     </div>
   );
 };

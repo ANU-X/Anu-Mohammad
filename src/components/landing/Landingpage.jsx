@@ -8,15 +8,20 @@ import Myskill from "../myskill/Myskill";
 import Project from "../project/Project";
 import Service from "../service/Service";
 import { AllassetContet } from "../../context/AssetsProvider";
-import Footer from '../footer/Footer'
+import Footer1 from "../footer/Footer1";
+import Hero from "../hero/Hero";
+
 
 
 const Landingpage = () => {
 
-  const {aboutRef, skillRef, projectsRef, exprenceRef, serviceRef, learningRef, educationRef, contactRef,} = useContext(AllassetContet)
+  const {homeRef, aboutRef, skillRef, projectsRef, exprenceRef, serviceRef, learningRef, educationRef, contactRef} = useContext(AllassetContet)
   
   return (
     <div>
+      <div ref={homeRef}>
+        <Hero/>
+      </div>
       <div ref={aboutRef}>
         <About />
       </div>
@@ -42,7 +47,7 @@ const Landingpage = () => {
         <Contact />
       </div>
       <div>
-        <Footer/>
+        <Footer1/>
       </div>
     </div>
   );

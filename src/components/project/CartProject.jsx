@@ -3,16 +3,17 @@ import { VscGithubInverted } from "react-icons/vsc";
 import { VscGlobe } from "react-icons/vsc";
 import { AllassetContet } from "../../context/AssetsProvider";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Buttons from "../buttons/Buttons";
 
 
 const CartProject = () => {
   const { ProjectCart } = useContext(AllassetContet);
-
+  
   // {/* 5c87f8-bc94f5-3bd595 */}
   return (
-    <div className="md:columns-2 xl:columns-3 md:gap-10 xl:gap-10 space-y-12">
+    <div  className="md:columns-2 xl:columns-3 md:gap-10 xl:gap-10 space-y-12">
       {ProjectCart.map((item) => (
-        <div key={item.id} className="flex flex-col border border-app-border hover:border-[#5c87f8] hover:shadow-[0_0_10px_0.5px_rgba(188,148,245)] rounded-4xl break-inside-avoid">
+        <div key={item.id} className="flex flex-col bg-[#5c88f811] border border-[#5c88f881] hover:border-[#5c88f8] hover:shadow-[0_0_10px_0.5px_rgba(188,148,245,0.40)] rounded-4xl break-inside-avoid hover:scale-105 transition-all duration-500">
           <div>
           <video autoPlay loop playsinline className=" aspect-video rounded-t-4xl">
             <source src={item.video} type="video/mp4"/>
@@ -34,26 +35,8 @@ const CartProject = () => {
               }
             </div>
             <div className="flex gap-8 items-center justify-center">
-              <button className="border border-app-border rounded-sm px-4 py-2 hover:text-white transition-all duration-300 hover:shadow-[0_0_20px_2px_rgba(224,45,45,0.6)]  hover:bg-red-500">
-                <a
-                  target="blank"
-                  href={item.liveLink}
-                  className="flex justify-center text-nowrap items-center gap-4"
-                >
-                  <VscGlobe />
-                  Live Demo
-                </a>
-              </button>
-              <button className="border border-app-border rounded-sm px-4 py-2 transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_2px_rgba(224,45,45,0.6)] hover:bg-red-500">
-                <a
-                  target="blank"
-                  href={item.codeLink}
-                  className="flex justify-center items-center gap-4"
-                >
-                  <VscGithubInverted />
-                  Source
-                </a>
-              </button>
+              <Buttons text="Live Demo" icon ={<VscGlobe/>} link = {item.liveLink} />   
+              <Buttons text='Source' icon= {<VscGithubInverted/>} link = {item.codeLink}/>
             </div>
           </div>
         </div>
@@ -64,3 +47,4 @@ const CartProject = () => {
 
 
 export default CartProject;
+

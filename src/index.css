@@ -57,3 +57,27 @@
     }
 
     /*text gradient use: bg-gradient-to-b from-[#537EBF] to-[#A384BC] bg-clip-text text-transparent */
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.animation-marquee {
+    animation: marquee 34s linear infinite;
+    display: flex;
+    width: max-content;
+    gap: 16px;
+}
+.animation-marquee:hover{
+    animation-play-state: paused;
+}
+    .animation-marquee-reverse {
+        animation: marquee 24s linear infinite reverse;
+        display: flex;
+        width: max-content;
+    }
+.animation-marquee-reverse:hover{
+    animation-play-state: paused;
+}
+
