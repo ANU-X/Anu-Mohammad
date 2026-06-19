@@ -46,7 +46,7 @@ const Webresume = () => {
         <div> Gender </div>
         <div> : Male </div>
         <div> Marital Status </div>
-        <div> : Unmarried </div>
+        <div> : Married </div>
         <div> Nationality </div>
         <div> : Bangladeshi (By Birth) </div>
         <div> NID No </div>
@@ -73,8 +73,8 @@ const Webresume = () => {
       <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4">
         <div className="sm:font-semibold"> PRESENT </div>
         <div className="space-y-2">
-          <h3 className="sm:text-lg font-bold"> Village : Nurer Chala Bazar </h3>
-          <p> Post Office : No.11 Word </p>
+          <h3 className="sm:text-lg font-bold"> Road-House : 472-76 </h3>
+          <p> Post Office : No.11 Word, Nurer Chala Bazar </p>
           <p> Police Station : Vatara Thana </p>
           <p> District : Dhaka </p>
         </div>

@@ -7,11 +7,11 @@ const Summary = () => {
         <hr />
       <p className="text-justify">
         Full-Stack Web Developer with hands-on experience delivering scalable,
-        high-performance applications for startups and international clients.
+        high-performance applications for startups.
         Skilled in building responsive, maintainable solutions using modern
-        technologies like React, Next.js, TypeScript, MongoDB Node.js, Supabase
+        technologies like React, MongoDB Node.js, Supabase
         and Prisma, with a strong focus on clean architecture and efficient
-        workflows. Experienced in integrating APIs, managing databases, and
+        workflows. Experienced in integrating APIs, managing databases and
         deploying applications to production. Proven track record of delivering
         projects end-to-end in fast-paced, agile-environments.
       </p>
@@ -22,8 +22,8 @@ const Summary = () => {
 
         <ul className="list-inside list-disc max-w-3xl mx-auto space-y-4">
             <li><span className="font-bold">Languages</span> : TypeScript, JavaScript, HTML, CSS</li>
-            <li><span className="font-bold">Frameworks & Libraries</span> : React, Next.js, Node.js, Express, Shadcn/UI, Tailwind CSS, Radix UI, Chakra UI, MUI</li>
-            <li><span className="font-bold">Databases & ORMs</span> : MySQL, Prisma, Firebase (Firestore), MongoDB</li>
+            <li><span className="font-bold">Frameworks & Libraries</span> : React, Node.js, Express, Shadcn/UI, Tailwind CSS, Radix UI, Chakra UI</li>
+            <li><span className="font-bold">Databases & ORMs</span> : Firebase MongoDB</li>
             <li><span className="font-bold">Tools & Platforms</span> : Git, Vercel, n8n, Figma, Canva, Jira</li>
             <li><span className="font-bold">Other</span> : REST APIs, Responsive Design, UI/UX, Automation Workflows</li>
         </ul>

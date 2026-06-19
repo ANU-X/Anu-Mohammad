@@ -60,7 +60,7 @@ const Hero = () => {
         <div className='flex flex-col gap-12'>
             <div ref={haderText}>
             <h1 className='text-4xl md:text-6xl leading-18 md:leading-23 font-medium text-transparent bg-clip-text bg-linear-to-r from-[#3bd595] to-purple-700'> Crafting <br /> Exceptional <br /> Web Experiences </h1>
-            <p> A full Stack Developer passionate about turning ideas into realistic and practical. <br /> A full Stack Developer passionate about turning ideas into realistic. </p>
+            <p> I am a Full Stack Developer dedicated to transforming innovative ideas into functional, <br /> practical, and real-world applications. By bridging creativity with robust code, <br /> I bring concepts to life through seamless digital solutions. </p>
             </div>
 
             <div ref={hadBotton} className='flex flex-wrap items-center gap-5'>
@@ -86,17 +86,17 @@ const Hero = () => {
                    </span>
                    <span className='flex items-center gap-1'>
                     <GoDotFill className='text-fuchsia-500 animate-pulse'/>
-                    <p>Portfolio.tx</p>
+                    <p className='text-[#e0e0e0]'>Portfolio.tx</p>
                    </span>
                 </div>
 
                 <div className=' row-span-5 flex flex-col justify-center px-20 bg-gray-900 rounded-b-3xl leading-relaxed'>
-                    <p><span className='text-gray-600'>01</span> &nbsp; &nbsp; <span className='text-[#F286C4]'>const</span> developer = &nbsp; <span className='text-[#55CB67]'>&#123;</span></p>
-                    <p className='whitespace-pre'><span className='text-gray-600'>02</span>            name:&nbsp; <span className='text-[#E7EE98]'>' Md Anu Mia '</span>,</p>
-                    <p className='whitespace-pre'><span className='text-gray-600'>03</span>            focus: &nbsp; <span className='text-[#E7EE98]'>' Fullstack Mastery '</span>,</p>
-                    <p className='whitespace-pre'><span className='text-gray-600'>04</span>            skills: &nbsp; <span className='text-[#4EBEEC]'>[</span> <span className='text-[#E7EE98]'>'NextJS', 'GSAP', 'AI'</span> <span className='text-[#4EBEEC]'>]</span>,</p>
-                    <p className='whitespace-pre'><span className='text-gray-600'>05</span>            passionate: &nbsp; <span className='text-red-500'>true</span>,</p>
-                    <p className='whitespace-pre'><span className='text-gray-600'>06</span>            motto: &nbsp; <span className='text-[#E7EE98]'>" Build with Purpose "</span></p>
+                    <p className='text-[#e0e0e0]'><span className='text-gray-600'>01</span> &nbsp; &nbsp; <span className='text-[#F286C4]'>const</span> developer = &nbsp; <span className='text-[#55CB67]'>&#123;</span></p>
+                    <p className='whitespace-pre text-[#e0e0e0]'><span className='text-gray-600'>02</span>            name:&nbsp; <span className='text-[#E7EE98]'>' Md Anu Mia '</span>,</p>
+                    <p className='whitespace-pre text-[#e0e0e0]'><span className='text-gray-600'>03</span>            focus: &nbsp; <span className='text-[#E7EE98]'>' Fullstack Mastery '</span>,</p>
+                    <p className='whitespace-pre text-[#e0e0e0]'><span className='text-gray-600'>04</span>            skills: &nbsp; <span className='text-[#4EBEEC]'>[</span> <span className='text-[#E7EE98]'>'React', 'Node', 'GSAP', 'AI'</span> <span className='text-[#4EBEEC]'>]</span>,</p>
+                    <p className='whitespace-pre text-[#e0e0e0]'><span className='text-gray-600'>05</span>            passionate: &nbsp; <span className='text-red-500'>true</span>,</p>
+                    <p className='whitespace-pre text-[#e0e0e0]'><span className='text-gray-600'>06</span>            motto: &nbsp; <span className='text-[#E7EE98]'>" Build with Purpose "</span></p>
                     <p><span className='text-gray-600'>07</span> &nbsp; &nbsp; <span className='text-[#55CB67]'>{'}'};</span></p>
                     <br />
                     <p><span className='text-gray-600'>08</span> &nbsp; <span className='text-[#55CB67]'>developer</span> . showcase<span className='text-[#4EBEEC]'>()</span>;</p>

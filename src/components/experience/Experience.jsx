@@ -29,7 +29,7 @@ const Experience = () => {
     <div className=" relative py-40 px-4 space-y-12 mx-auto max-w-7xl">
       <div>
         <h1 className='text-lg sm:text-2xl font-montserrat font-medium'>Experience</h1>
-        <p className='text-lg'>profesonal experience</p>
+        <p className='text-lg'>real life professional experience</p>
       </div>
       <div className="max-w-6xl mx-auto relative">
         
@@ -71,3 +71,4 @@ const Experience = () => {
 };
 
 export default Experience
+

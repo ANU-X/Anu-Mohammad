@@ -14,7 +14,7 @@ const Footer1 = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-0 items-center justify-items-center p-30">
       <div className='flex flex-col gap-10'>
         <span onClick={()=> scrollToSection(aboutRef)} className='cursor-pointer'> <img src={logo} alt="img" loading='lazy' width={80} /> </span>
-        <p className=' leading-relaxed'>Lorem ipsum dolor sit, amet consectetur adipisicing <br /> elit. Obcaecati tempore esse ducimus eos sapiente modi <br /> rem voluptas. Saepe soluta dolorem, fuga minima possimus <br /> exercitationem ducimus veniam aut nam assumenda. Aliquid!</p>
+        <p className=' leading-relaxed'>A multidisciplinary professional bridging the gap between <br /> design, development, and data. I specialize in crafting <br /> stunning graphics, building functional web solutions <br /> and analyzing data to drive meaningful results. <br /> Let’s collaborate to bring your digital vision to life.</p>
       </div>
       <div className='flex flex-col gap-10'>
         <h1>NAVIGATION</h1>

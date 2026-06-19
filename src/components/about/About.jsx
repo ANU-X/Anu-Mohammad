@@ -20,8 +20,7 @@ const About = () => {
         <h1 className=" font-inter-itght font-bold text-lg sm:text-4xl">
           A multiple profession at computer
         </h1>
-        <h6>I bridge the gap between design and high-level engineering. Based in Navi Mumbai I <br /> focus on creating digital experiences that are as technically sound as they are visually intuitive. <br />
-        I focus on creating digital experiences that are as technically </h6>
+        <h6>I am a versatile tech professional with expertise in Web Development, Graphic Design <br /> and Data Entry. I specialize in building functional websites, creating visually compelling <br /> designs and managing data with high accuracy to deliver end-to-end digital solutions.</h6>
         <div className="flex sm:block flex-col space-y-2">
         <li className="text-lg list-inside hover:underline underline-offset-4">Web Developer</li>
         <li className="text-lg list-inside hover:underline underline-offset-4">Graphic Designer</li>

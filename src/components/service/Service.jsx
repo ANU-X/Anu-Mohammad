@@ -14,12 +14,12 @@ const Service = () => {
         What i knows
       </div>
 
-      <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-y-8">
+      <div className=" container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         <div className=" flex space-x-5 ">
           <img src={commerce_soluition} alt="" className="h-10 md:h-12" />
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold">E-Commerce Soluition</h2>
-            <p className="font-inter text-gray-500"> it is a ecmmerce site </p>
+            <p className="font-inter text-gray-500"> Specialized in building end-to-end e-commerce solutions that drive sales and improve user experience. </p>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ const Service = () => {
           <img src={web_application} alt="" className="h-10 md:h-12" />
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold"> Custom web aplicication </h2>
-            <p className="font-inter text-gray-500">this is ak file</p>
+            <p className="font-inter text-gray-500">Expert in building fully customized web applications designed around specific client requirements.</p>
           </div>
         </div>
 
@@ -36,8 +36,7 @@ const Service = () => {
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold"> Web maintencee and sapport </h2>
             <p className="font-inter text-gray-500">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique, exercitationem.
+              Providing proactive website maintenance and technical support to ensure maximum security and uptime.
             </p>
           </div>
         </div>
@@ -47,8 +46,7 @@ const Service = () => {
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold"> Landing page site </h2>
             <p className="font-inter text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-              accusamus?
+              Designing high-converting landing pages tailored to turn visitors into loyal customers.
             </p>
           </div>
         </div>
@@ -58,8 +56,7 @@ const Service = () => {
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold"> Seo optimization </h2>
             <p className="font-inter text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-              possimus?
+              Optimizing websites for search engines to increase organic traffic, visibility, and search rankings.
             </p>
           </div>
         </div>
@@ -69,8 +66,7 @@ const Service = () => {
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold"> Site seo friendly </h2>
             <p className="font-inter text-gray-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Adipisci, illum?
+              Building SEO-friendly websites optimized for higher search engine rankings and increased organic traffic.
             </p>
           </div>
         </div>
@@ -79,7 +75,7 @@ const Service = () => {
           <img src={performance} alt="" className="h-10 md:h-12" />
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold"> Site performance </h2>
-            <p className="font-inter text-gray-500">Lorem ipsum dolor sit amet.</p>
+            <p className="font-inter text-gray-500">Optimizing website performance and loading speeds to deliver a fast, smooth, and seamless user experience.</p>
           </div>
         </div>
 
@@ -88,8 +84,7 @@ const Service = () => {
           <div>
             <h2 className="md:text-lg font-montserrat font-semibold"> Data security </h2>
             <p className="font-inter text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Incidunt, rerum?
+              Implementing robust data security measures and protocols to protect sensitive information from vulnerabilities.
             </p>
           </div>
         </div>
